@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición de la codificación de caracteres y la vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>Crear Tópico</title>
+    
+    <!-- Enlace al archivo de CSS de Bootstrap para estilos predefinidos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <!-- Enlace a la página principal -->
+            <a class="navbar-brand" href="#">Foro</a>
+            
+            <!-- Botón para mostrar el menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú de navegación que se muestra en dispositivos grandes -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Enlace a la página de tópicos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html">Tópicos</a>
+                    </li>
+                    <!-- Enlace a la página de cursos (aún no tiene destino definido) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <!-- Enlace al perfil del usuario (aún no tiene destino definido) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!-- Título de la sección de crear nuevo tópico -->
+                <h2 class="text-center text-primary">Crear Nuevo Tópico</h2>
+                
+                <!-- Formulario para crear un nuevo tópico -->
+                <form id="crear-topico-form">
+                    <!-- Campo para el título del tópico -->
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Ingrese el título del tópico">
+                    </div>
+                    
+                    <!-- Campo para el autor del tópico -->
+                    <div class="form-group">
+                        <label for="autor">Autor</label>
+                        <input type="text" class="form-control" id="autor" placeholder="Ingrese el nombre del autor">
+                    </div>
+                    
+                    <!-- Campo para seleccionar el curso al que pertenece el tópico -->
+                    <div class="form-group">
+                        <label for="curso">Curso</label>
+                        <select class="form-control" id="curso-select">
+                            <option value="">Seleccione un curso</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Campo para la fecha de creación del tópico -->
+                    <div class="form-group">
+                        <label for="fechaCreacion">Fecha de Creación</label>
+                        <input type="date" class="form-control" id="fechaCreacion">
+                    </div>
+                    
+                    <!-- Campo para la descripción del tópico -->
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" rows="5" placeholder="Ingrese la descripción del tópico"></textarea>
+                    </div>
+                    
+                    <!-- Botón para enviar el formulario y crear el tópico -->
+                    <button type="submit" class="btn btn-primary">Crear Tópico</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivos JS de Bootstrap y dependencias -->
+    <!-- Enlace al archivo JavaScript personalizado -->
+    <script src="/js/app.js"></script>
+    
+    <!-- Archivo jQuery necesario para el funcionamiento de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Archivo Popper.js necesario para algunos componentes de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    
+    <!-- Archivo JS de Bootstrap para los componentes interactivos -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

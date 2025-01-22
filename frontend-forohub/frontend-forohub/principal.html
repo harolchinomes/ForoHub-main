@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición de la codificación de caracteres y la vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>Foro Hub</title>
+    
+    <!-- Enlace al archivo de CSS de Bootstrap para estilos predefinidos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <!-- Enlace a la página principal (Foro Hub) -->
+            <a class="navbar-brand" href="principal.html">Foro</a>
+            
+            <!-- Botón para mostrar el menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú de navegación que se muestra en dispositivos grandes -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Enlace a la página de Tópicos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="topicos.html">Tópicos</a>
+                    </li>
+                    <!-- Enlace a la página de Cursos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="curso.html">Cursos</a>
+                    </li>
+                    <!-- Enlace a la página de Perfil (aún no tiene destino definido) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Enlace a la página de Perfil con un espacio para mostrar el nombre del usuario -->
+            <a class="navbar-brand" href="perfil.html" id="nombre-usuario"></a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Título de la sección de la lista de tópicos -->
+                <h2 class="text-center text-primary">Lista de Tópicos</h2>
+                
+                <!-- Botón para crear un nuevo tópico -->
+                <button class="btn btn-success mb-3" onclick="window.location.href='crear-topico.html'">Crear Nuevo Tópico</button>
+                
+                <!-- Lista de tópicos que se generará dinámicamente -->
+                <ul class="list-group" id="topic-list">
+                    <!-- Aquí se insertarán los tópicos dinámicamente -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivos JS de Bootstrap y dependencias -->
+    <!-- Enlace al archivo JavaScript personalizado -->
+    <script src="/js/app.js"></script>
+    
+    <!-- Archivo jQuery necesario para el funcionamiento de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Archivo Popper.js necesario para algunos componentes de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    
+    <!-- Archivo JS de Bootstrap para los componentes interactivos -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
